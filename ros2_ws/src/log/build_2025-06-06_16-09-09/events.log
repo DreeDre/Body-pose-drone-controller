@@ -1,0 +1,481 @@
+[0.000000] (-) TimerEvent: {}
+[0.002148] (drone_controller) JobQueued: {'identifier': 'drone_controller', 'dependencies': OrderedDict()}
+[0.003204] (launch_pkg) JobQueued: {'identifier': 'launch_pkg', 'dependencies': OrderedDict()}
+[0.004087] (pose_estimator) JobQueued: {'identifier': 'pose_estimator', 'dependencies': OrderedDict()}
+[0.004372] (sjtu_drone_bringup) JobQueued: {'identifier': 'sjtu_drone_bringup', 'dependencies': OrderedDict()}
+[0.005078] (sjtu_drone_control) JobQueued: {'identifier': 'sjtu_drone_control', 'dependencies': OrderedDict()}
+[0.005363] (sjtu_drone_description) JobQueued: {'identifier': 'sjtu_drone_description', 'dependencies': OrderedDict()}
+[0.009250] (drone_controller) JobStarted: {'identifier': 'drone_controller'}
+[0.049990] (launch_pkg) JobStarted: {'identifier': 'launch_pkg'}
+[0.403255] (-) TimerEvent: {}
+[0.557019] (-) TimerEvent: {}
+[0.976927] (-) TimerEvent: {}
+[1.082984] (-) TimerEvent: {}
+[1.405369] (-) TimerEvent: {}
+[1.506654] (-) TimerEvent: {}
+[1.646796] (launch_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/andre/ros2_ws/src/build/launch_pkg/build', '--no-deps', 'symlink_data'], 'cwd': '/home/andre/ros2_ws/src/build/launch_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'QT_SCALE_FACTOR': '1', 'LANGUAGE': 'en_US', 'USER': 'andre', 'XDG_SEAT': 'seat0', 'XDG_SESSION_TYPE': 'x11', 'COMPIZ_CONFIG_PROFILE': 'mate', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/andre/ros2_ws/install/sjtu_drone_description/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/andre', 'OLDPWD': '/home/andre/ros2_ws/src/launch_pkg', 'DESKTOP_SESSION': 'mate', 'ROS_PYTHON_VERSION': '3', 'GTK_MODULES': 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'UBUNTU_MENUPROXY': '1', 'QT_QPA_PLATFORMTHEME': 'gtk2', 'COLCON_PREFIX_PATH': '/home/andre/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'andre', 'WINDOWID': '46137350', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'GTK_OVERLAY_SCROLLING': '0', 'XDG_SESSION_ID': 'c1', 'ROS_LOCALHOST_ONLY': '0', 'INSIDE_CAJA_PYTHON': '', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/andre-VirtualBox:@/tmp/.ICE-unix/980,unix/andre-VirtualBox:/tmp/.ICE-unix/980', 'GDM_LANG': 'en_US', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'MATE', 'XDG_SESSION_DESKTOP': 'mate', 'XAUTHORITY': '/home/andre/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/andre', 'AMENT_PREFIX_PATH': '/home/andre/ros2_ws/install/sjtu_drone_description:/home/andre/ros2_ws/install/sjtu_drone_control:/home/andre/ros2_ws/install/sjtu_drone_bringup:/home/andre/ros2_ws/install/pose_estimator:/home/andre/ros2_ws/install/launch_pkg:/home/andre/ros2_ws/install/drone_controller:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'mate', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XDG_VTNR': '7', 'PWD': '/home/andre/ros2_ws/src/build/launch_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-mate:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/mate:/home/andre/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/andre/ros2_ws/src/build/launch_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andre/ros2_ws/src/install/launch_pkg/lib/python3.10/site-packages:/home/andre/ros2_ws/build/sjtu_drone_control:/home/andre/ros2_ws/install/sjtu_drone_control/lib/python3.10/site-packages:/home/andre/ros2_ws/build/sjtu_drone_bringup:/home/andre/ros2_ws/install/sjtu_drone_bringup/lib/python3.10/site-packages:/home/andre/ros2_ws/build/pose_estimator:/home/andre/ros2_ws/install/pose_estimator/lib/python3.10/site-packages:/home/andre/ros2_ws/build/launch_pkg:/home/andre/ros2_ws/install/launch_pkg/lib/python3.10/site-packages:/home/andre/ros2_ws/build/drone_controller:/home/andre/ros2_ws/install/drone_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'MATE_DESKTOP_SESSION_ID': 'this-is-deprecated', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/andre/ros2_ws/install/sjtu_drone_description', 'QT_FONT_DPI': '96'}, 'shell': False}
+[1.648026] (-) TimerEvent: {}
+[1.778286] (-) TimerEvent: {}
+[1.786450] (drone_controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/andre/ros2_ws/src/build/drone_controller/build', '--no-deps', 'symlink_data'], 'cwd': '/home/andre/ros2_ws/src/build/drone_controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'QT_SCALE_FACTOR': '1', 'LANGUAGE': 'en_US', 'USER': 'andre', 'XDG_SEAT': 'seat0', 'XDG_SESSION_TYPE': 'x11', 'COMPIZ_CONFIG_PROFILE': 'mate', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/andre/ros2_ws/install/sjtu_drone_description/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/andre', 'OLDPWD': '/home/andre/ros2_ws/src/launch_pkg', 'DESKTOP_SESSION': 'mate', 'ROS_PYTHON_VERSION': '3', 'GTK_MODULES': 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'UBUNTU_MENUPROXY': '1', 'QT_QPA_PLATFORMTHEME': 'gtk2', 'COLCON_PREFIX_PATH': '/home/andre/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'andre', 'WINDOWID': '46137350', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'GTK_OVERLAY_SCROLLING': '0', 'XDG_SESSION_ID': 'c1', 'ROS_LOCALHOST_ONLY': '0', 'INSIDE_CAJA_PYTHON': '', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/andre-VirtualBox:@/tmp/.ICE-unix/980,unix/andre-VirtualBox:/tmp/.ICE-unix/980', 'GDM_LANG': 'en_US', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'MATE', 'XDG_SESSION_DESKTOP': 'mate', 'XAUTHORITY': '/home/andre/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/andre', 'AMENT_PREFIX_PATH': '/home/andre/ros2_ws/install/sjtu_drone_description:/home/andre/ros2_ws/install/sjtu_drone_control:/home/andre/ros2_ws/install/sjtu_drone_bringup:/home/andre/ros2_ws/install/pose_estimator:/home/andre/ros2_ws/install/launch_pkg:/home/andre/ros2_ws/install/drone_controller:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'mate', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XDG_VTNR': '7', 'PWD': '/home/andre/ros2_ws/src/build/drone_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-mate:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/mate:/home/andre/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/andre/ros2_ws/src/build/drone_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andre/ros2_ws/src/install/drone_controller/lib/python3.10/site-packages:/home/andre/ros2_ws/build/sjtu_drone_control:/home/andre/ros2_ws/install/sjtu_drone_control/lib/python3.10/site-packages:/home/andre/ros2_ws/build/sjtu_drone_bringup:/home/andre/ros2_ws/install/sjtu_drone_bringup/lib/python3.10/site-packages:/home/andre/ros2_ws/build/pose_estimator:/home/andre/ros2_ws/install/pose_estimator/lib/python3.10/site-packages:/home/andre/ros2_ws/build/launch_pkg:/home/andre/ros2_ws/install/launch_pkg/lib/python3.10/site-packages:/home/andre/ros2_ws/build/drone_controller:/home/andre/ros2_ws/install/drone_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'MATE_DESKTOP_SESSION_ID': 'this-is-deprecated', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/andre/ros2_ws/install/sjtu_drone_description', 'QT_FONT_DPI': '96'}, 'shell': False}
+[2.215144] (launch_pkg) StdoutLine: {'line': b'running develop\n'}
+[2.216377] (-) TimerEvent: {}
+[2.247604] (drone_controller) StdoutLine: {'line': b'running develop\n'}
+[2.382982] (-) TimerEvent: {}
+[2.479736] (launch_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[2.479982] (launch_pkg) StdoutLine: {'line': b'creating launch_pkg.egg-info\n'}
+[2.495032] (-) TimerEvent: {}
+[2.499944] (launch_pkg) StdoutLine: {'line': b'writing launch_pkg.egg-info/PKG-INFO\n'}
+[2.502310] (launch_pkg) StdoutLine: {'line': b'writing dependency_links to launch_pkg.egg-info/dependency_links.txt\n'}
+[2.502410] (launch_pkg) StdoutLine: {'line': b'writing entry points to launch_pkg.egg-info/entry_points.txt\n'}
+[2.503030] (launch_pkg) StdoutLine: {'line': b'writing requirements to launch_pkg.egg-info/requires.txt\n'}
+[2.503103] (launch_pkg) StdoutLine: {'line': b'writing top-level names to launch_pkg.egg-info/top_level.txt\n'}
+[2.503170] (launch_pkg) StdoutLine: {'line': b"writing manifest file 'launch_pkg.egg-info/SOURCES.txt'\n"}
+[2.503235] (launch_pkg) StdoutLine: {'line': b"reading manifest file 'launch_pkg.egg-info/SOURCES.txt'\n"}
+[2.503300] (launch_pkg) StdoutLine: {'line': b"writing manifest file 'launch_pkg.egg-info/SOURCES.txt'\n"}
+[2.503943] (launch_pkg) StdoutLine: {'line': b'running build_ext\n'}
+[2.506326] (launch_pkg) StdoutLine: {'line': b'Creating /home/andre/ros2_ws/src/install/launch_pkg/lib/python3.10/site-packages/launch-pkg.egg-link (link to .)\n'}
+[2.507190] (launch_pkg) StdoutLine: {'line': b'\n'}
+[2.507263] (launch_pkg) StdoutLine: {'line': b'Installed /home/andre/ros2_ws/src/build/launch_pkg\n'}
+[2.507771] (launch_pkg) StdoutLine: {'line': b'running symlink_data\n'}
+[2.507874] (launch_pkg) StdoutLine: {'line': b'creating /home/andre/ros2_ws/src/install/launch_pkg/share/ament_index\n'}
+[2.507944] (launch_pkg) StdoutLine: {'line': b'creating /home/andre/ros2_ws/src/install/launch_pkg/share/ament_index/resource_index\n'}
+[2.541004] (launch_pkg) StdoutLine: {'line': b'creating /home/andre/ros2_ws/src/install/launch_pkg/share/ament_index/resource_index/packages\n'}
+[2.552014] (launch_pkg) StdoutLine: {'line': b'symbolically linking /home/andre/ros2_ws/src/build/launch_pkg/resource/launch_pkg -> /home/andre/ros2_ws/src/install/launch_pkg/share/ament_index/resource_index/packages\n'}
+[2.552258] (launch_pkg) StdoutLine: {'line': b'symbolically linking /home/andre/ros2_ws/src/build/launch_pkg/package.xml -> /home/andre/ros2_ws/src/install/launch_pkg/share/launch_pkg\n'}
+[2.552428] (launch_pkg) CommandEnded: {'returncode': 0}
+[2.710981] (launch_pkg) JobEnded: {'identifier': 'launch_pkg', 'rc': 0}
+[2.737584] (-) TimerEvent: {}
+[2.742078] (pose_estimator) JobStarted: {'identifier': 'pose_estimator'}
+[2.742491] (drone_controller) StdoutLine: {'line': b'running egg_info\n'}
+[2.742797] (drone_controller) StdoutLine: {'line': b'creating drone_controller.egg-info\n'}
+[2.742978] (drone_controller) StdoutLine: {'line': b'writing drone_controller.egg-info/PKG-INFO\n'}
+[2.743142] (drone_controller) StdoutLine: {'line': b'writing dependency_links to drone_controller.egg-info/dependency_links.txt\n'}
+[2.743436] (drone_controller) StdoutLine: {'line': b'writing entry points to drone_controller.egg-info/entry_points.txt\n'}
+[2.743617] (drone_controller) StdoutLine: {'line': b'writing requirements to drone_controller.egg-info/requires.txt\n'}
+[2.743778] (drone_controller) StdoutLine: {'line': b'writing top-level names to drone_controller.egg-info/top_level.txt\n'}
+[2.743937] (drone_controller) StdoutLine: {'line': b"writing manifest file 'drone_controller.egg-info/SOURCES.txt'\n"}
+[2.744095] (drone_controller) StdoutLine: {'line': b"reading manifest file 'drone_controller.egg-info/SOURCES.txt'\n"}
+[2.744398] (drone_controller) StdoutLine: {'line': b"writing manifest file 'drone_controller.egg-info/SOURCES.txt'\n"}
+[2.744806] (drone_controller) StdoutLine: {'line': b'running build_ext\n'}
+[2.746008] (drone_controller) StdoutLine: {'line': b'Creating /home/andre/ros2_ws/src/install/drone_controller/lib/python3.10/site-packages/drone-controller.egg-link (link to .)\n'}
+[2.749510] (drone_controller) StdoutLine: {'line': b'\n'}
+[2.750037] (drone_controller) StdoutLine: {'line': b'Installed /home/andre/ros2_ws/src/build/drone_controller\n'}
+[2.751188] (drone_controller) StdoutLine: {'line': b'running symlink_data\n'}
+[2.752619] (drone_controller) StdoutLine: {'line': b'creating /home/andre/ros2_ws/src/install/drone_controller/share/ament_index\n'}
+[2.754064] (drone_controller) StdoutLine: {'line': b'creating /home/andre/ros2_ws/src/install/drone_controller/share/ament_index/resource_index\n'}
+[2.754349] (drone_controller) StdoutLine: {'line': b'creating /home/andre/ros2_ws/src/install/drone_controller/share/ament_index/resource_index/packages\n'}
+[2.755871] (drone_controller) StdoutLine: {'line': b'symbolically linking /home/andre/ros2_ws/src/build/drone_controller/resource/drone_controller -> /home/andre/ros2_ws/src/install/drone_controller/share/ament_index/resource_index/packages\n'}
+[2.756347] (drone_controller) StdoutLine: {'line': b'symbolically linking /home/andre/ros2_ws/src/build/drone_controller/package.xml -> /home/andre/ros2_ws/src/install/drone_controller/share/drone_controller\n'}
+[2.838953] (-) TimerEvent: {}
+[3.000584] (-) TimerEvent: {}
+[3.107556] (-) TimerEvent: {}
+[3.220948] (-) TimerEvent: {}
+[3.243121] (drone_controller) CommandEnded: {'returncode': 0}
+[3.248835] (drone_controller) JobEnded: {'identifier': 'drone_controller', 'rc': 0}
+[3.252099] (sjtu_drone_bringup) JobStarted: {'identifier': 'sjtu_drone_bringup'}
+[3.322648] (-) TimerEvent: {}
+[3.424810] (-) TimerEvent: {}
+[3.745403] (-) TimerEvent: {}
+[4.040716] (-) TimerEvent: {}
+[4.046388] (pose_estimator) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/andre/ros2_ws/src/build/pose_estimator/build', '--no-deps', 'symlink_data'], 'cwd': '/home/andre/ros2_ws/src/build/pose_estimator', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'QT_SCALE_FACTOR': '1', 'LANGUAGE': 'en_US', 'USER': 'andre', 'XDG_SEAT': 'seat0', 'XDG_SESSION_TYPE': 'x11', 'COMPIZ_CONFIG_PROFILE': 'mate', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/andre/ros2_ws/install/sjtu_drone_description/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/andre', 'OLDPWD': '/home/andre/ros2_ws/src/launch_pkg', 'DESKTOP_SESSION': 'mate', 'ROS_PYTHON_VERSION': '3', 'GTK_MODULES': 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'UBUNTU_MENUPROXY': '1', 'QT_QPA_PLATFORMTHEME': 'gtk2', 'COLCON_PREFIX_PATH': '/home/andre/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'andre', 'WINDOWID': '46137350', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'GTK_OVERLAY_SCROLLING': '0', 'XDG_SESSION_ID': 'c1', 'ROS_LOCALHOST_ONLY': '0', 'INSIDE_CAJA_PYTHON': '', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/andre-VirtualBox:@/tmp/.ICE-unix/980,unix/andre-VirtualBox:/tmp/.ICE-unix/980', 'GDM_LANG': 'en_US', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'MATE', 'XDG_SESSION_DESKTOP': 'mate', 'XAUTHORITY': '/home/andre/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/andre', 'AMENT_PREFIX_PATH': '/home/andre/ros2_ws/install/sjtu_drone_description:/home/andre/ros2_ws/install/sjtu_drone_control:/home/andre/ros2_ws/install/sjtu_drone_bringup:/home/andre/ros2_ws/install/pose_estimator:/home/andre/ros2_ws/install/launch_pkg:/home/andre/ros2_ws/install/drone_controller:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'mate', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XDG_VTNR': '7', 'PWD': '/home/andre/ros2_ws/src/build/pose_estimator', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-mate:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/mate:/home/andre/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/andre/ros2_ws/src/build/pose_estimator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andre/ros2_ws/src/install/pose_estimator/lib/python3.10/site-packages:/home/andre/ros2_ws/build/sjtu_drone_control:/home/andre/ros2_ws/install/sjtu_drone_control/lib/python3.10/site-packages:/home/andre/ros2_ws/build/sjtu_drone_bringup:/home/andre/ros2_ws/install/sjtu_drone_bringup/lib/python3.10/site-packages:/home/andre/ros2_ws/build/pose_estimator:/home/andre/ros2_ws/install/pose_estimator/lib/python3.10/site-packages:/home/andre/ros2_ws/build/launch_pkg:/home/andre/ros2_ws/install/launch_pkg/lib/python3.10/site-packages:/home/andre/ros2_ws/build/drone_controller:/home/andre/ros2_ws/install/drone_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'MATE_DESKTOP_SESSION_ID': 'this-is-deprecated', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/andre/ros2_ws/install/sjtu_drone_description', 'QT_FONT_DPI': '96'}, 'shell': False}
+[4.385704] (-) TimerEvent: {}
+[4.472760] (sjtu_drone_bringup) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/andre/ros2_ws/src/build/sjtu_drone_bringup/build', '--no-deps', 'symlink_data'], 'cwd': '/home/andre/ros2_ws/src/build/sjtu_drone_bringup', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'QT_SCALE_FACTOR': '1', 'LANGUAGE': 'en_US', 'USER': 'andre', 'XDG_SEAT': 'seat0', 'XDG_SESSION_TYPE': 'x11', 'COMPIZ_CONFIG_PROFILE': 'mate', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/andre/ros2_ws/install/sjtu_drone_description/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/andre', 'OLDPWD': '/home/andre/ros2_ws/src/launch_pkg', 'DESKTOP_SESSION': 'mate', 'ROS_PYTHON_VERSION': '3', 'GTK_MODULES': 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'UBUNTU_MENUPROXY': '1', 'QT_QPA_PLATFORMTHEME': 'gtk2', 'COLCON_PREFIX_PATH': '/home/andre/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'andre', 'WINDOWID': '46137350', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'GTK_OVERLAY_SCROLLING': '0', 'XDG_SESSION_ID': 'c1', 'ROS_LOCALHOST_ONLY': '0', 'INSIDE_CAJA_PYTHON': '', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/andre-VirtualBox:@/tmp/.ICE-unix/980,unix/andre-VirtualBox:/tmp/.ICE-unix/980', 'GDM_LANG': 'en_US', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'MATE', 'XDG_SESSION_DESKTOP': 'mate', 'XAUTHORITY': '/home/andre/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/andre', 'AMENT_PREFIX_PATH': '/home/andre/ros2_ws/install/sjtu_drone_description:/home/andre/ros2_ws/install/sjtu_drone_control:/home/andre/ros2_ws/install/sjtu_drone_bringup:/home/andre/ros2_ws/install/pose_estimator:/home/andre/ros2_ws/install/launch_pkg:/home/andre/ros2_ws/install/drone_controller:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'mate', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XDG_VTNR': '7', 'PWD': '/home/andre/ros2_ws/src/build/sjtu_drone_bringup', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-mate:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/mate:/home/andre/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/andre/ros2_ws/src/build/sjtu_drone_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andre/ros2_ws/src/install/sjtu_drone_bringup/lib/python3.10/site-packages:/home/andre/ros2_ws/build/sjtu_drone_control:/home/andre/ros2_ws/install/sjtu_drone_control/lib/python3.10/site-packages:/home/andre/ros2_ws/build/sjtu_drone_bringup:/home/andre/ros2_ws/install/sjtu_drone_bringup/lib/python3.10/site-packages:/home/andre/ros2_ws/build/pose_estimator:/home/andre/ros2_ws/install/pose_estimator/lib/python3.10/site-packages:/home/andre/ros2_ws/build/launch_pkg:/home/andre/ros2_ws/install/launch_pkg/lib/python3.10/site-packages:/home/andre/ros2_ws/build/drone_controller:/home/andre/ros2_ws/install/drone_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'MATE_DESKTOP_SESSION_ID': 'this-is-deprecated', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/andre/ros2_ws/install/sjtu_drone_description', 'QT_FONT_DPI': '96'}, 'shell': False}
+[4.491977] (-) TimerEvent: {}
+[4.569094] (pose_estimator) StdoutLine: {'line': b'running develop\n'}
+[4.888869] (pose_estimator) StdoutLine: {'line': b'running egg_info\n'}
+[4.890038] (-) TimerEvent: {}
+[4.891936] (pose_estimator) StdoutLine: {'line': b'creating pose_estimator.egg-info\n'}
+[4.915256] (pose_estimator) StdoutLine: {'line': b'writing pose_estimator.egg-info/PKG-INFO\n'}
+[4.928102] (pose_estimator) StdoutLine: {'line': b'writing dependency_links to pose_estimator.egg-info/dependency_links.txt\n'}
+[4.940143] (pose_estimator) StdoutLine: {'line': b'writing entry points to pose_estimator.egg-info/entry_points.txt\n'}
+[4.963839] (pose_estimator) StdoutLine: {'line': b'writing requirements to pose_estimator.egg-info/requires.txt\n'}
+[4.965264] (pose_estimator) StdoutLine: {'line': b'writing top-level names to pose_estimator.egg-info/top_level.txt\n'}
+[4.966640] (pose_estimator) StdoutLine: {'line': b"writing manifest file 'pose_estimator.egg-info/SOURCES.txt'\n"}
+[4.980140] (pose_estimator) StdoutLine: {'line': b"reading manifest file 'pose_estimator.egg-info/SOURCES.txt'\n"}
+[5.000646] (-) TimerEvent: {}
+[5.000997] (pose_estimator) StdoutLine: {'line': b"writing manifest file 'pose_estimator.egg-info/SOURCES.txt'\n"}
+[5.001223] (pose_estimator) StdoutLine: {'line': b'running build_ext\n'}
+[5.003260] (pose_estimator) StdoutLine: {'line': b'Creating /home/andre/ros2_ws/src/install/pose_estimator/lib/python3.10/site-packages/pose-estimator.egg-link (link to .)\n'}
+[5.009014] (pose_estimator) StdoutLine: {'line': b'\n'}
+[5.009933] (pose_estimator) StdoutLine: {'line': b'Installed /home/andre/ros2_ws/src/build/pose_estimator\n'}
+[5.010041] (pose_estimator) StdoutLine: {'line': b'running symlink_data\n'}
+[5.024291] (pose_estimator) StdoutLine: {'line': b'creating /home/andre/ros2_ws/src/install/pose_estimator/share/ament_index\n'}
+[5.024482] (pose_estimator) StdoutLine: {'line': b'creating /home/andre/ros2_ws/src/install/pose_estimator/share/ament_index/resource_index\n'}
+[5.024592] (pose_estimator) StdoutLine: {'line': b'creating /home/andre/ros2_ws/src/install/pose_estimator/share/ament_index/resource_index/packages\n'}
+[5.098685] (sjtu_drone_bringup) StdoutLine: {'line': b'running develop\n'}
+[5.099243] (-) TimerEvent: {}
+[5.101270] (pose_estimator) StdoutLine: {'line': b'symbolically linking /home/andre/ros2_ws/src/build/pose_estimator/resource/pose_estimator -> /home/andre/ros2_ws/src/install/pose_estimator/share/ament_index/resource_index/packages\n'}
+[5.102765] (pose_estimator) StdoutLine: {'line': b'symbolically linking /home/andre/ros2_ws/src/build/pose_estimator/package.xml -> /home/andre/ros2_ws/src/install/pose_estimator/share/pose_estimator\n'}
+[5.145063] (pose_estimator) CommandEnded: {'returncode': 0}
+[5.145925] (pose_estimator) JobEnded: {'identifier': 'pose_estimator', 'rc': 0}
+[5.146995] (sjtu_drone_control) JobStarted: {'identifier': 'sjtu_drone_control'}
+[5.199793] (-) TimerEvent: {}
+[5.327699] (-) TimerEvent: {}
+[5.443275] (-) TimerEvent: {}
+[5.545867] (-) TimerEvent: {}
+[5.596146] (sjtu_drone_bringup) StdoutLine: {'line': b'running egg_info\n'}
+[5.596466] (sjtu_drone_bringup) StdoutLine: {'line': b'creating sjtu_drone_bringup.egg-info\n'}
+[5.599413] (sjtu_drone_bringup) StdoutLine: {'line': b'writing sjtu_drone_bringup.egg-info/PKG-INFO\n'}
+[5.599635] (sjtu_drone_bringup) StdoutLine: {'line': b'writing dependency_links to sjtu_drone_bringup.egg-info/dependency_links.txt\n'}
+[5.599738] (sjtu_drone_bringup) StdoutLine: {'line': b'writing entry points to sjtu_drone_bringup.egg-info/entry_points.txt\n'}
+[5.599824] (sjtu_drone_bringup) StdoutLine: {'line': b'writing requirements to sjtu_drone_bringup.egg-info/requires.txt\n'}
+[5.599906] (sjtu_drone_bringup) StdoutLine: {'line': b'writing top-level names to sjtu_drone_bringup.egg-info/top_level.txt\n'}
+[5.600029] (sjtu_drone_bringup) StdoutLine: {'line': b"writing manifest file 'sjtu_drone_bringup.egg-info/SOURCES.txt'\n"}
+[5.615314] (sjtu_drone_bringup) StdoutLine: {'line': b"reading manifest file 'sjtu_drone_bringup.egg-info/SOURCES.txt'\n"}
+[5.630734] (sjtu_drone_bringup) StdoutLine: {'line': b"writing manifest file 'sjtu_drone_bringup.egg-info/SOURCES.txt'\n"}
+[5.640751] (sjtu_drone_bringup) StdoutLine: {'line': b'running build_ext\n'}
+[5.641000] (sjtu_drone_bringup) StdoutLine: {'line': b'Creating /home/andre/ros2_ws/src/install/sjtu_drone_bringup/lib/python3.10/site-packages/sjtu-drone-bringup.egg-link (link to .)\n'}
+[5.641102] (sjtu_drone_bringup) StdoutLine: {'line': b'Installing spawn_drone script to /home/andre/ros2_ws/src/install/sjtu_drone_bringup/lib/sjtu_drone_bringup\n'}
+[5.641195] (sjtu_drone_bringup) StdoutLine: {'line': b'\n'}
+[5.641284] (sjtu_drone_bringup) StdoutLine: {'line': b'Installed /home/andre/ros2_ws/src/build/sjtu_drone_bringup\n'}
+[5.641371] (sjtu_drone_bringup) StdoutLine: {'line': b'running symlink_data\n'}
+[5.641458] (sjtu_drone_bringup) StdoutLine: {'line': b'creating /home/andre/ros2_ws/src/install/sjtu_drone_bringup/share/ament_index\n'}
+[5.641546] (sjtu_drone_bringup) StdoutLine: {'line': b'creating /home/andre/ros2_ws/src/install/sjtu_drone_bringup/share/ament_index/resource_index\n'}
+[5.641633] (sjtu_drone_bringup) StdoutLine: {'line': b'creating /home/andre/ros2_ws/src/install/sjtu_drone_bringup/share/ament_index/resource_index/packages\n'}
+[5.641703] (sjtu_drone_bringup) StdoutLine: {'line': b'symbolically linking /home/andre/ros2_ws/src/build/sjtu_drone_bringup/resource/sjtu_drone_bringup -> /home/andre/ros2_ws/src/install/sjtu_drone_bringup/share/ament_index/resource_index/packages\n'}
+[5.641772] (sjtu_drone_bringup) StdoutLine: {'line': b'symbolically linking /home/andre/ros2_ws/src/build/sjtu_drone_bringup/package.xml -> /home/andre/ros2_ws/src/install/sjtu_drone_bringup/share/sjtu_drone_bringup\n'}
+[5.641844] (sjtu_drone_bringup) StdoutLine: {'line': b'creating /home/andre/ros2_ws/src/install/sjtu_drone_bringup/share/sjtu_drone_bringup/launch\n'}
+[5.641912] (sjtu_drone_bringup) StdoutLine: {'line': b'symbolically linking /home/andre/ros2_ws/src/build/sjtu_drone_bringup/launch/sjtu_drone_bringup.launch.py -> /home/andre/ros2_ws/src/install/sjtu_drone_bringup/share/sjtu_drone_bringup/launch\n'}
+[5.641982] (sjtu_drone_bringup) StdoutLine: {'line': b'symbolically linking /home/andre/ros2_ws/src/build/sjtu_drone_bringup/launch/sjtu_drone_gazebo.launch.py -> /home/andre/ros2_ws/src/install/sjtu_drone_bringup/share/sjtu_drone_bringup/launch\n'}
+[5.642051] (sjtu_drone_bringup) StdoutLine: {'line': b'creating /home/andre/ros2_ws/src/install/sjtu_drone_bringup/share/sjtu_drone_bringup/rviz\n'}
+[5.646771] (-) TimerEvent: {}
+[5.647086] (sjtu_drone_bringup) StdoutLine: {'line': b'symbolically linking /home/andre/ros2_ws/src/build/sjtu_drone_bringup/rviz/rviz.rviz -> /home/andre/ros2_ws/src/install/sjtu_drone_bringup/share/sjtu_drone_bringup/rviz\n'}
+[5.647248] (sjtu_drone_bringup) StdoutLine: {'line': b'creating /home/andre/ros2_ws/src/install/sjtu_drone_bringup/share/sjtu_drone_bringup/config\n'}
+[5.649722] (sjtu_drone_bringup) StdoutLine: {'line': b'symbolically linking /home/andre/ros2_ws/src/build/sjtu_drone_bringup/config/drone.yaml -> /home/andre/ros2_ws/src/install/sjtu_drone_bringup/share/sjtu_drone_bringup/config\n'}
+[5.753038] (-) TimerEvent: {}
+[5.874714] (-) TimerEvent: {}
+[5.975915] (-) TimerEvent: {}
+[6.082677] (-) TimerEvent: {}
+[6.183670] (-) TimerEvent: {}
+[6.286112] (-) TimerEvent: {}
+[6.330900] (sjtu_drone_bringup) CommandEnded: {'returncode': 0}
+[6.366937] (sjtu_drone_bringup) JobEnded: {'identifier': 'sjtu_drone_bringup', 'rc': 0}
+[6.372863] (sjtu_drone_description) JobStarted: {'identifier': 'sjtu_drone_description'}
+[6.396849] (-) TimerEvent: {}
+[6.419787] (sjtu_drone_description) JobProgress: {'identifier': 'sjtu_drone_description', 'progress': 'cmake'}
+[6.420597] (sjtu_drone_description) Command: {'cmd': ['/usr/bin/cmake', '/home/andre/ros2_ws/src/sjtu_drone/sjtu_drone_description', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/andre/ros2_ws/src/install/sjtu_drone_description'], 'cwd': '/home/andre/ros2_ws/src/build/sjtu_drone_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'en_US'), ('USER', 'andre'), ('XDG_SEAT', 'seat0'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andre/ros2_ws/install/sjtu_drone_description/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('OLDPWD', '/home/andre/ros2_ws/src/launch_pkg'), ('DESKTOP_SESSION', 'mate'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/andre/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('WINDOWID', '46137350'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c1'), ('ROS_LOCALHOST_ONLY', '0'), ('INSIDE_CAJA_PYTHON', ''), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/andre-VirtualBox:@/tmp/.ICE-unix/980,unix/andre-VirtualBox:/tmp/.ICE-unix/980'), ('GDM_LANG', 'en_US'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/andre/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/andre'), ('AMENT_PREFIX_PATH', '/home/andre/ros2_ws/install/sjtu_drone_description:/home/andre/ros2_ws/install/sjtu_drone_control:/home/andre/ros2_ws/install/sjtu_drone_bringup:/home/andre/ros2_ws/install/pose_estimator:/home/andre/ros2_ws/install/launch_pkg:/home/andre/ros2_ws/install/drone_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '7'), ('PWD', '/home/andre/ros2_ws/src/build/sjtu_drone_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/andre/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andre/ros2_ws/build/sjtu_drone_control:/home/andre/ros2_ws/install/sjtu_drone_control/lib/python3.10/site-packages:/home/andre/ros2_ws/build/sjtu_drone_bringup:/home/andre/ros2_ws/install/sjtu_drone_bringup/lib/python3.10/site-packages:/home/andre/ros2_ws/build/pose_estimator:/home/andre/ros2_ws/install/pose_estimator/lib/python3.10/site-packages:/home/andre/ros2_ws/build/launch_pkg:/home/andre/ros2_ws/install/launch_pkg/lib/python3.10/site-packages:/home/andre/ros2_ws/build/drone_controller:/home/andre/ros2_ws/install/drone_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andre/ros2_ws/install/sjtu_drone_description:/home/andre/ros2_ws/install/sjtu_drone_control:/home/andre/ros2_ws/install/sjtu_drone_bringup:/home/andre/ros2_ws/install/pose_estimator:/home/andre/ros2_ws/install/launch_pkg:/home/andre/ros2_ws/install/drone_controller:/opt/ros/humble'), ('QT_FONT_DPI', '96')]), 'shell': False}
+[6.499037] (-) TimerEvent: {}
+[6.600820] (-) TimerEvent: {}
+[6.702262] (-) TimerEvent: {}
+[6.820677] (-) TimerEvent: {}
+[6.934050] (-) TimerEvent: {}
+[7.042095] (-) TimerEvent: {}
+[7.147393] (-) TimerEvent: {}
+[7.263712] (-) TimerEvent: {}
+[7.369170] (-) TimerEvent: {}
+[7.472977] (-) TimerEvent: {}
+[7.589910] (-) TimerEvent: {}
+[7.693565] (-) TimerEvent: {}
+[7.728987] (sjtu_drone_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[7.794063] (-) TimerEvent: {}
+[7.898229] (-) TimerEvent: {}
+[8.001222] (-) TimerEvent: {}
+[8.105335] (-) TimerEvent: {}
+[8.221581] (-) TimerEvent: {}
+[8.240093] (sjtu_drone_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/andre/ros2_ws/src/build/sjtu_drone_control/build', '--no-deps', 'symlink_data'], 'cwd': '/home/andre/ros2_ws/src/build/sjtu_drone_control', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'QT_SCALE_FACTOR': '1', 'LANGUAGE': 'en_US', 'USER': 'andre', 'XDG_SEAT': 'seat0', 'XDG_SESSION_TYPE': 'x11', 'COMPIZ_CONFIG_PROFILE': 'mate', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/andre/ros2_ws/install/sjtu_drone_description/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/andre', 'OLDPWD': '/home/andre/ros2_ws/src/launch_pkg', 'DESKTOP_SESSION': 'mate', 'ROS_PYTHON_VERSION': '3', 'GTK_MODULES': 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module', 'XDG_SEAT_PATH': '/org/freedesktop/DisplayManager/Seat0', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'UBUNTU_MENUPROXY': '1', 'QT_QPA_PLATFORMTHEME': 'gtk2', 'COLCON_PREFIX_PATH': '/home/andre/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'andre', 'WINDOWID': '46137350', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'GTK_OVERLAY_SCROLLING': '0', 'XDG_SESSION_ID': 'c1', 'ROS_LOCALHOST_ONLY': '0', 'INSIDE_CAJA_PYTHON': '', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/andre-VirtualBox:@/tmp/.ICE-unix/980,unix/andre-VirtualBox:/tmp/.ICE-unix/980', 'GDM_LANG': 'en_US', 'XDG_SESSION_PATH': '/org/freedesktop/DisplayManager/Session0', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'MATE', 'XDG_SESSION_DESKTOP': 'mate', 'XAUTHORITY': '/home/andre/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'XDG_GREETER_DATA_DIR': '/var/lib/lightdm-data/andre', 'AMENT_PREFIX_PATH': '/home/andre/ros2_ws/install/sjtu_drone_description:/home/andre/ros2_ws/install/sjtu_drone_control:/home/andre/ros2_ws/install/sjtu_drone_bringup:/home/andre/ros2_ws/install/pose_estimator:/home/andre/ros2_ws/install/launch_pkg:/home/andre/ros2_ws/install/drone_controller:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'mate', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'XDG_VTNR': '7', 'PWD': '/home/andre/ros2_ws/src/build/sjtu_drone_control', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-mate:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/mate:/home/andre/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/andre/ros2_ws/src/build/sjtu_drone_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/andre/ros2_ws/src/install/sjtu_drone_control/lib/python3.10/site-packages:/home/andre/ros2_ws/build/sjtu_drone_control:/home/andre/ros2_ws/install/sjtu_drone_control/lib/python3.10/site-packages:/home/andre/ros2_ws/build/sjtu_drone_bringup:/home/andre/ros2_ws/install/sjtu_drone_bringup/lib/python3.10/site-packages:/home/andre/ros2_ws/build/pose_estimator:/home/andre/ros2_ws/install/pose_estimator/lib/python3.10/site-packages:/home/andre/ros2_ws/build/launch_pkg:/home/andre/ros2_ws/install/launch_pkg/lib/python3.10/site-packages:/home/andre/ros2_ws/build/drone_controller:/home/andre/ros2_ws/install/drone_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'MATE_DESKTOP_SESSION_ID': 'this-is-deprecated', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/andre/ros2_ws/install/sjtu_drone_description', 'QT_FONT_DPI': '96'}, 'shell': False}
+[8.327048] (-) TimerEvent: {}
+[8.378208] (sjtu_drone_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[8.429187] (-) TimerEvent: {}
+[8.451987] (sjtu_drone_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[8.533245] (-) TimerEvent: {}
+[8.636831] (-) TimerEvent: {}
+[8.739779] (-) TimerEvent: {}
+[8.841474] (-) TimerEvent: {}
+[8.955377] (-) TimerEvent: {}
+[8.966745] (sjtu_drone_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[9.004997] (sjtu_drone_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[9.013692] (sjtu_drone_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[9.016696] (sjtu_drone_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[9.025110] (sjtu_drone_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[9.056124] (-) TimerEvent: {}
+[9.165063] (-) TimerEvent: {}
+[9.279316] (-) TimerEvent: {}
+[9.323364] (sjtu_drone_control) StdoutLine: {'line': b'running develop\n'}
+[9.385566] (-) TimerEvent: {}
+[9.402606] (sjtu_drone_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[9.404383] (sjtu_drone_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[9.404550] (sjtu_drone_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[9.407945] (sjtu_drone_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[9.417303] (sjtu_drone_description) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[9.419026] (sjtu_drone_description) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[9.472800] (sjtu_drone_description) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[9.487824] (-) TimerEvent: {}
+[9.589912] (-) TimerEvent: {}
+[9.695589] (sjtu_drone_description) StdoutLine: {'line': b"-- Checking for module 'OGRE-Terrain'\n"}
+[9.695939] (-) TimerEvent: {}
+[9.752244] (sjtu_drone_description) StdoutLine: {'line': b'--   Found OGRE-Terrain, version 1.9.0\n'}
+[9.765713] (sjtu_drone_control) StdoutLine: {'line': b'running egg_info\n'}
+[9.766766] (sjtu_drone_control) StdoutLine: {'line': b'creating sjtu_drone_control.egg-info\n'}
+[9.767653] (sjtu_drone_control) StdoutLine: {'line': b'writing sjtu_drone_control.egg-info/PKG-INFO\n'}
+[9.768578] (sjtu_drone_control) StdoutLine: {'line': b'writing dependency_links to sjtu_drone_control.egg-info/dependency_links.txt\n'}
+[9.769228] (sjtu_drone_control) StdoutLine: {'line': b'writing entry points to sjtu_drone_control.egg-info/entry_points.txt\n'}
+[9.769848] (sjtu_drone_control) StdoutLine: {'line': b'writing requirements to sjtu_drone_control.egg-info/requires.txt\n'}
+[9.770303] (sjtu_drone_control) StdoutLine: {'line': b'writing top-level names to sjtu_drone_control.egg-info/top_level.txt\n'}
+[9.774022] (sjtu_drone_control) StdoutLine: {'line': b"writing manifest file 'sjtu_drone_control.egg-info/SOURCES.txt'\n"}
+[9.774303] (sjtu_drone_control) StdoutLine: {'line': b"reading manifest file 'sjtu_drone_control.egg-info/SOURCES.txt'\n"}
+[9.775872] (sjtu_drone_control) StdoutLine: {'line': b"writing manifest file 'sjtu_drone_control.egg-info/SOURCES.txt'\n"}
+[9.782550] (sjtu_drone_control) StdoutLine: {'line': b'running build_ext\n'}
+[9.783326] (sjtu_drone_control) StdoutLine: {'line': b'Creating /home/andre/ros2_ws/src/install/sjtu_drone_control/lib/python3.10/site-packages/sjtu-drone-control.egg-link (link to .)\n'}
+[9.785091] (sjtu_drone_control) StdoutLine: {'line': b'Installing drone_position_control script to /home/andre/ros2_ws/src/install/sjtu_drone_control/lib/sjtu_drone_control\n'}
+[9.786143] (sjtu_drone_control) StdoutLine: {'line': b'Installing open_loop_control script to /home/andre/ros2_ws/src/install/sjtu_drone_control/lib/sjtu_drone_control\n'}
+[9.786759] (sjtu_drone_control) StdoutLine: {'line': b'Installing teleop script to /home/andre/ros2_ws/src/install/sjtu_drone_control/lib/sjtu_drone_control\n'}
+[9.787268] (sjtu_drone_control) StdoutLine: {'line': b'Installing teleop_joystick script to /home/andre/ros2_ws/src/install/sjtu_drone_control/lib/sjtu_drone_control\n'}
+[9.787986] (sjtu_drone_control) StdoutLine: {'line': b'\n'}
+[9.788415] (sjtu_drone_control) StdoutLine: {'line': b'Installed /home/andre/ros2_ws/src/build/sjtu_drone_control\n'}
+[9.788613] (sjtu_drone_control) StdoutLine: {'line': b'running symlink_data\n'}
+[9.789237] (sjtu_drone_control) StdoutLine: {'line': b'creating /home/andre/ros2_ws/src/install/sjtu_drone_control/share/ament_index\n'}
+[9.789388] (sjtu_drone_control) StdoutLine: {'line': b'creating /home/andre/ros2_ws/src/install/sjtu_drone_control/share/ament_index/resource_index\n'}
+[9.789882] (sjtu_drone_control) StdoutLine: {'line': b'creating /home/andre/ros2_ws/src/install/sjtu_drone_control/share/ament_index/resource_index/packages\n'}
+[9.790082] (sjtu_drone_control) StdoutLine: {'line': b'symbolically linking /home/andre/ros2_ws/src/build/sjtu_drone_control/resource/sjtu_drone_control -> /home/andre/ros2_ws/src/install/sjtu_drone_control/share/ament_index/resource_index/packages\n'}
+[9.847246] (sjtu_drone_control) StdoutLine: {'line': b'symbolically linking /home/andre/ros2_ws/src/build/sjtu_drone_control/package.xml -> /home/andre/ros2_ws/src/install/sjtu_drone_control/share/sjtu_drone_control\n'}
+[9.847753] (-) TimerEvent: {}
+[9.863422] (sjtu_drone_control) CommandEnded: {'returncode': 0}
+[9.863803] (sjtu_drone_control) JobEnded: {'identifier': 'sjtu_drone_control', 'rc': 0}
+[9.884607] (sjtu_drone_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[9.948782] (-) TimerEvent: {}
+[10.049996] (-) TimerEvent: {}
+[10.150779] (-) TimerEvent: {}
+[10.253748] (-) TimerEvent: {}
+[10.354899] (-) TimerEvent: {}
+[10.455793] (-) TimerEvent: {}
+[10.556599] (-) TimerEvent: {}
+[10.635166] (sjtu_drone_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[10.663874] (-) TimerEvent: {}
+[10.766949] (-) TimerEvent: {}
+[10.850638] (sjtu_drone_description) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[10.867244] (-) TimerEvent: {}
+[10.949618] (sjtu_drone_description) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[10.970278] (-) TimerEvent: {}
+[10.982444] (sjtu_drone_description) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[11.070969] (-) TimerEvent: {}
+[11.118357] (sjtu_drone_description) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[11.134343] (sjtu_drone_description) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[11.168427] (sjtu_drone_description) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[11.174587] (-) TimerEvent: {}
+[11.226525] (sjtu_drone_description) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[11.279260] (-) TimerEvent: {}
+[11.318060] (sjtu_drone_description) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[11.381917] (-) TimerEvent: {}
+[11.453542] (sjtu_drone_description) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[11.475638] (sjtu_drone_description) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[11.507078] (-) TimerEvent: {}
+[11.618059] (-) TimerEvent: {}
+[11.729010] (-) TimerEvent: {}
+[11.830299] (-) TimerEvent: {}
+[11.907934] (sjtu_drone_description) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[11.930800] (-) TimerEvent: {}
+[11.995700] (sjtu_drone_description) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[12.031378] (-) TimerEvent: {}
+[12.134220] (-) TimerEvent: {}
+[12.176751] (sjtu_drone_description) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[12.217142] (sjtu_drone_description) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[12.235293] (-) TimerEvent: {}
+[12.341820] (-) TimerEvent: {}
+[12.443410] (-) TimerEvent: {}
+[12.549000] (-) TimerEvent: {}
+[12.651661] (-) TimerEvent: {}
+[12.731266] (sjtu_drone_description) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[12.731576] (sjtu_drone_description) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[12.753972] (-) TimerEvent: {}
+[12.861239] (-) TimerEvent: {}
+[12.963825] (-) TimerEvent: {}
+[13.066242] (-) TimerEvent: {}
+[13.168866] (-) TimerEvent: {}
+[13.269668] (-) TimerEvent: {}
+[13.286273] (sjtu_drone_description) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[13.291980] (sjtu_drone_description) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[13.370025] (-) TimerEvent: {}
+[13.471923] (-) TimerEvent: {}
+[13.498281] (sjtu_drone_description) StdoutLine: {'line': b'-- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[13.567941] (sjtu_drone_description) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[13.572832] (-) TimerEvent: {}
+[13.667176] (sjtu_drone_description) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[13.673131] (-) TimerEvent: {}
+[13.787381] (-) TimerEvent: {}
+[13.889264] (-) TimerEvent: {}
+[13.995780] (-) TimerEvent: {}
+[14.103947] (-) TimerEvent: {}
+[14.209064] (-) TimerEvent: {}
+[14.311633] (-) TimerEvent: {}
+[14.400007] (sjtu_drone_description) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[14.415013] (-) TimerEvent: {}
+[14.522152] (-) TimerEvent: {}
+[14.624032] (-) TimerEvent: {}
+[14.749385] (-) TimerEvent: {}
+[14.839500] (sjtu_drone_description) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[14.853887] (-) TimerEvent: {}
+[14.960768] (-) TimerEvent: {}
+[15.016894] (sjtu_drone_description) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[15.064211] (-) TimerEvent: {}
+[15.140857] (sjtu_drone_description) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[15.165232] (-) TimerEvent: {}
+[15.219502] (sjtu_drone_description) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[15.236694] (sjtu_drone_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[15.254410] (sjtu_drone_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[15.261861] (sjtu_drone_description) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[15.263241] (sjtu_drone_description) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[15.265869] (-) TimerEvent: {}
+[15.285976] (sjtu_drone_description) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[15.366146] (-) TimerEvent: {}
+[15.368917] (sjtu_drone_description) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[15.466655] (-) TimerEvent: {}
+[15.568694] (-) TimerEvent: {}
+[15.617118] (sjtu_drone_description) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[15.669081] (-) TimerEvent: {}
+[15.676780] (sjtu_drone_description) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[15.699143] (sjtu_drone_description) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[15.699482] (sjtu_drone_description) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[15.734470] (sjtu_drone_description) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[15.734725] (sjtu_drone_description) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[15.758919] (sjtu_drone_description) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[15.759272] (sjtu_drone_description) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[15.769697] (-) TimerEvent: {}
+[15.781994] (sjtu_drone_description) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[15.782442] (sjtu_drone_description) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[15.808270] (sjtu_drone_description) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[15.814911] (sjtu_drone_description) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[15.842172] (sjtu_drone_description) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[15.873961] (-) TimerEvent: {}
+[15.974725] (-) TimerEvent: {}
+[16.075565] (-) TimerEvent: {}
+[16.179085] (-) TimerEvent: {}
+[16.280258] (-) TimerEvent: {}
+[16.381638] (-) TimerEvent: {}
+[16.473886] (sjtu_drone_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[16.484722] (-) TimerEvent: {}
+[16.486963] (sjtu_drone_description) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[16.488846] (sjtu_drone_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[16.552165] (sjtu_drone_description) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[16.585179] (-) TimerEvent: {}
+[16.590500] (sjtu_drone_description) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[16.613798] (sjtu_drone_description) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[16.685628] (-) TimerEvent: {}
+[16.686990] (sjtu_drone_description) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[16.786247] (-) TimerEvent: {}
+[16.884882] (sjtu_drone_description) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[16.889813] (-) TimerEvent: {}
+[16.908137] (sjtu_drone_description) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[16.990766] (-) TimerEvent: {}
+[16.996073] (sjtu_drone_description) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[17.095907] (-) TimerEvent: {}
+[17.198340] (-) TimerEvent: {}
+[17.220331] (sjtu_drone_description) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[17.226899] (sjtu_drone_description) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[17.229084] (sjtu_drone_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[17.301916] (-) TimerEvent: {}
+[17.315172] (sjtu_drone_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[17.339409] (sjtu_drone_description) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[17.402244] (-) TimerEvent: {}
+[17.414351] (sjtu_drone_description) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[17.505176] (-) TimerEvent: {}
+[17.611978] (-) TimerEvent: {}
+[17.645519] (sjtu_drone_description) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[17.677755] (sjtu_drone_description) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[17.682597] (sjtu_drone_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[17.686503] (sjtu_drone_description) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[17.691196] (sjtu_drone_description) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[17.701258] (sjtu_drone_description) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[17.716727] (-) TimerEvent: {}
+[17.757928] (sjtu_drone_description) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[17.760250] (sjtu_drone_description) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[17.767631] (sjtu_drone_description) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[17.774935] (sjtu_drone_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[17.797022] (sjtu_drone_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[17.807182] (sjtu_drone_description) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[17.807663] (sjtu_drone_description) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[17.819588] (-) TimerEvent: {}
+[17.922785] (-) TimerEvent: {}
+[18.024032] (-) TimerEvent: {}
+[18.125071] (-) TimerEvent: {}
+[18.226137] (-) TimerEvent: {}
+[18.243266] (sjtu_drone_description) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[18.275556] (sjtu_drone_description) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[18.329683] (-) TimerEvent: {}
+[18.430586] (-) TimerEvent: {}
+[18.438223] (sjtu_drone_description) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[18.536763] (-) TimerEvent: {}
+[18.637748] (-) TimerEvent: {}
+[18.672808] (sjtu_drone_description) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[18.706032] (sjtu_drone_description) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[18.739976] (-) TimerEvent: {}
+[18.784968] (sjtu_drone_description) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[18.840850] (-) TimerEvent: {}
+[18.941641] (-) TimerEvent: {}
+[18.984195] (sjtu_drone_description) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[18.984677] (sjtu_drone_description) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[18.985809] (sjtu_drone_description) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[18.987796] (sjtu_drone_description) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[19.015150] (sjtu_drone_description) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[19.015676] (sjtu_drone_description) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[19.047131] (-) TimerEvent: {}
+[19.101227] (sjtu_drone_description) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[19.148886] (-) TimerEvent: {}
+[19.249713] (-) TimerEvent: {}
+[19.286370] (sjtu_drone_description) StdoutLine: {'line': b'-- Found gazebo_plugins: 3.9.0 (/opt/ros/humble/share/gazebo_plugins/cmake)\n'}
+[19.351492] (-) TimerEvent: {}
+[19.454149] (-) TimerEvent: {}
+[19.455347] (sjtu_drone_description) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[19.542860] (sjtu_drone_description) StdoutLine: {'line': b'-- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[19.558137] (-) TimerEvent: {}
+[19.632660] (sjtu_drone_description) StdoutLine: {'line': b'-- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)\n'}
+[19.661256] (-) TimerEvent: {}
+[19.662867] (sjtu_drone_description) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[19.799239] (-) TimerEvent: {}
+[19.808714] (sjtu_drone_description) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[19.880983] (sjtu_drone_description) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[19.890294] (sjtu_drone_description) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[19.890607] (sjtu_drone_description) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[19.910573] (-) TimerEvent: {}
+[19.934999] (sjtu_drone_description) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[20.111977] (-) TimerEvent: {}
+[20.131508] (sjtu_drone_description) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[20.131927] (sjtu_drone_description) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/andre/ros2_ws/src/sjtu_drone/sjtu_drone_description/include;$<BUILD_INTERFACE:/home/andre/ros2_ws/src/sjtu_drone/sjtu_drone_description/include>\n'}
+[20.132110] (sjtu_drone_description) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[20.155410] (sjtu_drone_description) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[20.184115] (sjtu_drone_description) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[20.185425] (sjtu_drone_description) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[20.199673] (sjtu_drone_description) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[20.220293] (sjtu_drone_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[20.220648] (-) TimerEvent: {}
+[20.321447] (sjtu_drone_description) StdoutLine: {'line': b'-- Generating done\n'}
+[20.321789] (-) TimerEvent: {}
+[20.339490] (sjtu_drone_description) StdoutLine: {'line': b'-- Build files have been written to: /home/andre/ros2_ws/src/build/sjtu_drone_description\n'}
+[20.401494] (sjtu_drone_description) CommandEnded: {'returncode': 0}
+[20.413222] (sjtu_drone_description) JobProgress: {'identifier': 'sjtu_drone_description', 'progress': 'build'}
+[20.413346] (sjtu_drone_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/andre/ros2_ws/src/build/sjtu_drone_description', '--', '-j2', '-l2'], 'cwd': '/home/andre/ros2_ws/src/build/sjtu_drone_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'en_US'), ('USER', 'andre'), ('XDG_SEAT', 'seat0'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/andre/ros2_ws/install/sjtu_drone_description/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/andre'), ('OLDPWD', '/home/andre/ros2_ws/src/launch_pkg'), ('DESKTOP_SESSION', 'mate'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('COLCON_PREFIX_PATH', '/home/andre/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'andre'), ('WINDOWID', '46137350'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('XDG_SESSION_ID', 'c1'), ('ROS_LOCALHOST_ONLY', '0'), ('INSIDE_CAJA_PYTHON', ''), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/andre-VirtualBox:@/tmp/.ICE-unix/980,unix/andre-VirtualBox:/tmp/.ICE-unix/980'), ('GDM_LANG', 'en_US'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/andre/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/andre'), ('AMENT_PREFIX_PATH', '/home/andre/ros2_ws/install/sjtu_drone_description:/home/andre/ros2_ws/install/sjtu_drone_control:/home/andre/ros2_ws/install/sjtu_drone_bringup:/home/andre/ros2_ws/install/pose_estimator:/home/andre/ros2_ws/install/launch_pkg:/home/andre/ros2_ws/install/drone_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('XDG_VTNR', '7'), ('PWD', '/home/andre/ros2_ws/src/build/sjtu_drone_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/andre/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/andre/ros2_ws/build/sjtu_drone_control:/home/andre/ros2_ws/install/sjtu_drone_control/lib/python3.10/site-packages:/home/andre/ros2_ws/build/sjtu_drone_bringup:/home/andre/ros2_ws/install/sjtu_drone_bringup/lib/python3.10/site-packages:/home/andre/ros2_ws/build/pose_estimator:/home/andre/ros2_ws/install/pose_estimator/lib/python3.10/site-packages:/home/andre/ros2_ws/build/launch_pkg:/home/andre/ros2_ws/install/launch_pkg/lib/python3.10/site-packages:/home/andre/ros2_ws/build/drone_controller:/home/andre/ros2_ws/install/drone_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/andre/ros2_ws/install/sjtu_drone_description:/home/andre/ros2_ws/install/sjtu_drone_control:/home/andre/ros2_ws/install/sjtu_drone_bringup:/home/andre/ros2_ws/install/pose_estimator:/home/andre/ros2_ws/install/launch_pkg:/home/andre/ros2_ws/install/drone_controller:/opt/ros/humble'), ('QT_FONT_DPI', '96')]), 'shell': False}
+[20.439955] (-) TimerEvent: {}
+[20.541622] (-) TimerEvent: {}
+[20.642371] (-) TimerEvent: {}
+[20.750616] (-) TimerEvent: {}
+[20.759019] (sjtu_drone_description) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/plugin_drone.dir/src/plugin_drone.cpp.o\x1b[0m\n'}
+[20.796330] (sjtu_drone_description) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/plugin_drone.dir/src/plugin_drone_private.cpp.o\x1b[0m\n'}
+[20.853139] (-) TimerEvent: {}
+[20.955339] (-) TimerEvent: {}
+[21.061207] (-) TimerEvent: {}
+[21.163234] (-) TimerEvent: {}
+[21.265816] (-) TimerEvent: {}
+[21.368653] (-) TimerEvent: {}
+[21.470281] (-) TimerEvent: {}
+[21.573488] (-) TimerEvent: {}
+[21.674037] (-) TimerEvent: {}
+[21.776342] (-) TimerEvent: {}
+[21.879114] (-) TimerEvent: {}
+[21.980729] (-) TimerEvent: {}
+[22.082545] (-) TimerEvent: {}
+[22.183611] (-) TimerEvent: {}
+[22.290612] (-) TimerEvent: {}
+[22.391562] (-) TimerEvent: {}
+[22.493296] (-) TimerEvent: {}
+[22.595936] (-) TimerEvent: {}
+[22.698841] (-) TimerEvent: {}
+[22.728046] (sjtu_drone_description) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/plugin_drone.dir/build.make:76: CMakeFiles/plugin_drone.dir/src/plugin_drone.cpp.o] Interrupt\n'}
+[22.728380] (sjtu_drone_description) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/plugin_drone.dir/build.make:90: CMakeFiles/plugin_drone.dir/src/plugin_drone_private.cpp.o] Interrupt\n'}
+[22.728505] (sjtu_drone_description) StderrLine: {'line': b'gmake[1]: *** wait: No child processes.  Stop.\n'}
+[22.728613] (sjtu_drone_description) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[22.728717] (sjtu_drone_description) StderrLine: {'line': b'gmake[1]: *** wait: No child processes.  Stop.\n'}
+[22.728818] (sjtu_drone_description) StderrLine: {'line': b'gmake: *** wait: No child processes.  Stop.\n'}
+[22.728920] (sjtu_drone_description) StderrLine: {'line': b'gmake: *** Waiting for unfinished jobs....\n'}
+[22.729019] (sjtu_drone_description) StderrLine: {'line': b'gmake: *** wait: No child processes.  Stop.\n'}
+[22.743879] (sjtu_drone_description) CommandEnded: {'returncode': -2}
+[22.747999] (sjtu_drone_description) JobEnded: {'identifier': 'sjtu_drone_description', 'rc': 'SIGINT'}
+[22.750784] (-) EventReactorShutdown: {}
